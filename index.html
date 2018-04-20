@@ -1,13 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>MaxShop</title>
+
+    <!-- Page Icon -->
+    <link type="image/png" href="images/logo.png" rel="icon">
+
+    <!-- Font - Poppins -->
+    <link href="" rel="stylesheet">
+
+    <!-- Font - PT Sans (Myriad Pro substitute for "Designed by Themix" in footer) -->
+    <link href="" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="top-nav">
+            <a href="index.html" class="top-nav__logo">
+                <img src="images/logo.png" alt="Logo of maxshop">
+            </a>
+            <ul class="top-nav__menu">
+                <li class="top-nav__menu__menu-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="top-nav__menu__menu-item">
+                    <a href="#">Shop</a>
+                    <!-- <div class="visuallyhidden">
+                        <nav>
+                            <h3>Clothing</h3>
+                            <ul>
+                                <li> 
+                                    <a href="#">Shirts</a> 
+                                </li>
+                                <li> 
+                                    <a href="#">Tops</a> 
+                                </li>
+                                <li> 
+                                    <a href="#">Outerwear</a> 
+                                </li>
+                                <li> 
+                                    <a href="#">Bottoms</a> 
+                                </li>
+                                <li> 
+                                    <a href="#">Denim</a> 
+                                </li>
+                                <li> 
+                                    <a href="#">Swim</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <h3>Hand Bag</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Work</a>
+                                </li>
+                                <li>
+                                    <a href="#">Weekend</a>
+                                </li>
+                                <li>
+                                    <a href="#">Backpacks</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wallets</a>
+                                </li>
+                                <li>
+                                    <a href="#">Work</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <h3>Shoes</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Sneakers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Casual</a>
+                                </li>
+                                <li>
+                                    <a href="#">Boots</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shoe Care</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <h3>Accesories</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Sunglasses</a>
+                                </li>
+                                <li>
+                                    <a href="#">Watches</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jewelry</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hats, Scarves & Gloves</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ties</a>
+                                </li>
+                                <li>
+                                    <a href="#">Underwear & Socks</a>
+                                </li>
+                                <li>
+                                    <a href="#">Grooming Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Belts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> -->
+                </li>
+                <li class="top-nav__menu__menu-item">
+                    <a href="#">Lookbook</a>
+                </li>
+                <li class="top-nav__menu__menu-item">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="top-nav__menu__menu-item">
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+
+            <ul class="language-nav">
+                <li class="language-nav__menu">
+                    <p>GB</p>
+                    <ul class="language-nav__menu__submenu">
+                        <li>US</li>
+                        <li>FR</li>
+                        <li>DE</li>
+                        <li>BR</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="right-nav">
+                <ul class="right-nav__nav-search">
+                    <li class="right-nav__nav-search__list">
+                        <img src="images/search.png" alt="">
+                        <form action="search.php" method="POST">
+                            <label for="search">Search Now!</label>
+                            <input type="text" placeholder="Search..">
+                            <input type="submit" value="Search">
+                        </form>
+                    </li>
+                </ul>
+
+                <button class="right-nav__account">
+                    <img src="images/myAccount.png" alt="">
+                </button>
+
+                <div class="right-nav__cart">
+                    <i></i>
+                    <p>1</p>
+                </div>
+            </div>
+
+        </nav>
+
+        <section class="banner">
+            <div class="banner__text">
+                <h4>26/02/2016</h4>
+                <p>Bring glamour to your wardrobe</p>
+                <h2>Summer Colection 2016"</h1>
+                    <h1>01</h1>
+            </div>
+            <div class="banner__image">
+                <img src="images/main-image-1.png" alt="">
+                <button>
+                    <i class="far fa-angle-left"></i>
+                </button>
+                <button>
+                    <i class="far fa-angle-left"></i>
+                </button>
+            </div>
+        </section>
+    </header>
+
+    <nav class="clothing-nav">
+        <ul class="clothing-nav__menu">
+            <li class="clothing-nav__menu__menu-item">
+                <img src="images/image-1.png" alt="">
+                <h5>Fashion</h5>
+                <h5>& Acessories</h5>
+            </li>
+            <li class="clothing-nav__menu__menu-item">
+                <img src="images/image-2.png" alt="">
+                <h5>New</h5>
+                <h5>Collections</h5>
+            </li>
+            <li class="clothing-nav__menu__menu-item">
+                <img src="images/image-3.png" alt="">
+                <h5>Spring/Summer</h5>
+                <h5>Lookbook</h5>
+            </li>    
+        </ul>
+    </nav>
+
+    <main>
+        <section class="top-products">
+            <div class="top-products__title">
+                <h4>Top Products</h4>
+                <p>Come & Check our new spring summer collection 2016</p>
+            </div>
+            <div class="top-products__btn">
+                <button>prev</button>
+                <button>/ Next</button>
+            </div>
+            <div class="top-products__menu">
+                <div class="top-products__menu__menu-item">
+                    <img src="" alt="">
+                    <button>
+                        <img src="" alt="">
+                    </button>
+                    <p>Lipsy Crochet Applique Wrap</p>
+                    <p>Blouse</p>
+                    <h6>$120.00</h6>
+                    <h6 class="top-products__menu__menu-item--discounted">$150.00</h6>
+                </div>
+                <div class="top-products__menu__menu-item">
+                    <img src="" alt="">
+                    <button>
+                        <img src="" alt="">
+                    </button>
+                    <p>Sweatshirt in Grey Marl</p>
+                    <p>T-shirt</p>
+                    <h6>$110.00</h6>
+                </div>
+                <div class="top-products__menu__menu-item">
+                    <img src="" alt="">
+                    <button>
+                        <img src="" alt="">
+                    </button>
+                    <p>Embroidered Flippy</p>
+                    <p>Dress</p>
+                    <h6>$145.00</h6>
+                </div>
+                <div class="top-products__menu__menu-item">
+                    <img src="" alt="">
+                    <button>
+                        <img src="" alt="">
+                    </button>
+                    <p>Embroidered Skater</p>
+                    <p>Dress</p>
+                    <h6>$120.00</h6>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <img src="" alt="">
+                <div>
+                    <button>
+                        <i class="far fa-angle-left"></i>
+                    </button>
+                    <button>
+                        <i class="far fa-angle-left"></i>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h4>Salvatore Ferragamo Lookbook</h4>
+                <h4>Spring/Summer 2016</h4>
+                <p>18 June 2016 / Salvatore Campain</p>
+            </div>
+            <a href="#">Get the Look!</a>
+            <p>By Mark Jacobs</p>
+        </section>
+
+        <section>
+            <div>
+                <img src="" alt="">
+                <button>
+                    <img src="" alt="">
+                </button>
+                <p>Lipsy Crochet Applique Wrap</p>
+                <p>Blouse</p>
+                <h6>$120.00</h6>
+                <h6>$150.00</h6>
+            </div>
+            <div>
+                <img src="" alt="">
+                <button>
+                    <img src="" alt="">
+                </button>
+                <p>Sweatshirt in Grey Marl</p>
+                <p>T-shirt</p>
+                <h6>$88.00</h6>
+                <h6>$120.00</h6>
+            </div>
+            <div>
+                <img src="" alt="">
+                <button>
+                    <img src="" alt="">
+                </button>
+                <p>Oysho Crop & Vest Set</p>
+                <p>Dress</p>
+                <h6>$112.00</h6>
+                <h6>$140.00</h6>
+            </div>
+            <div>
+                <img src="" alt="">
+                <button>
+                    <img src="" alt="">
+                </button>
+                <p>55SDL Lightning Bolt Sweatshirt</p>
+                <p>Dress</p>
+                <h6>$80.00</h6>
+                <h6>$100.00</h6>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <h4>Our Blog</h4>
+        <div>
+            <div>
+                <p>Lookbook</p>
+                <h6>Excerpt: A Sense of Belonging</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, bus purus eget molestie orci. In hac habitasse platea di Curabitur euismod mattis neque.</p>
+            </div>
+            <img src="" alt="">
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <div>
+                        <button>
+                            <i class="far fa-angle-left"></i>
+                        </button>
+                        <button>
+                            <i class="far fa-angle-left"></i>
+                        </button>
+                    </div>
+                </div>
+                <p>Campaign</p>
+                <h6>Chester & Peck 2016</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, bus purus eget molestie orci. In hac habitasse platea di Curabitur euismod mattis neque.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <section>
+            <div>
+                <h4>Rethink Your Design</h4>
+                <p>Minimal & Modern Look</p>
+                <a href="#">Discover More</a>
+            </div>
+            <div>
+                <h4>We Are Fashion Shop</h4>
+                <p>Revolutionary Concepts</p>
+                <a href="#">Shop Now</a>
+            </div>
+        </section>
+        <section>
+            <div>
+                
+                <h6>Contact</h6>
+                <p>621 Bingamon Branch Road Warwick NY 10990</p>
+                <div>
+                    <p>Phone: 845-988-7165</p>
+                    <p>Fax: 814-468-0188</p>
+                    <p>Email: Support@maxshop.com</p>
+                </div>
+            </div>
+            <div>
+                <h6>Tags</h6>
+                    <div>
+                        <a href="#">creative</a>
+                        <a href="#">blog</a>
+                        <a href="#">maxshopthemes</a>
+                        <a href="#">themeforest</a>
+                        <a href="#">logo</a>
+                        <a href="#">template</a>
+                        <a href="#">psd</a>
+                        <a href="#">wordpress</a>
+                    </div>
+            </div>
+            <div>
+                <h6>Instagram</h6>
+                <div>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div>
+                <h6>Newsletter</h6>
+                <form action="newsletter.php" method="POST">
+                    <label for="email">Signup for our Newsletter & Events</label>
+                    <input type="email" name="email" placeholder="Email address">
+                    <label for="signup" class="visuallyhidden">Signup</label>
+                    <input type="submit" value="Signup">
+                </form>
+            </div>
+        </section>
+    </footer>
+
 </body>
+
 </html>
