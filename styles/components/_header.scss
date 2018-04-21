@@ -1,0 +1,80 @@
+.top-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    
+    &__logo {
+        flex: 0 1 379px;
+        margin-left: 4%;
+    }
+
+    &__menu {
+        max-width: 635px;
+        flex: 0 1 635px;
+        display: flex;
+        justify-content: space-between;
+
+        &__menu-item {
+            
+            & a {
+                color: $black3;
+                text-decoration: none;
+                padding: 46px 0;
+                margin: 40px 0;
+                display: inline-block;
+            }
+        }
+    }
+
+    &__language-nav {
+        max-width: 100px;
+        display: flex;
+        flex: 1 1 100px;
+        justify-content: center;
+        align-self: center;
+        
+        &__menu {
+            display: flex;
+
+            & img {
+            }
+
+            & p {
+                color: red;
+                margin: 0;
+            }
+        }
+    }
+
+    &__right-nav {
+        max-width: 150px;
+        display: flex;
+        text-align: right;
+        align-items: center;
+        flex: 1 1 150px;
+
+        & button {
+
+            background: white;
+            border: none;
+
+        }
+    
+        &__search {
+            margin: 0 9px;
+
+        }
+
+        &__account {
+            margin: 0 9px;
+        }
+
+        &__cart {
+            margin: 0 9px;
+        }
+    }
+
+
+}
