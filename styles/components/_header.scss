@@ -1,80 +1,171 @@
+
+// Header Nav
+
 .top-nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: baseline;  
+    font-family: $mont;
     
     &__logo {
-        flex: 0 1 379px;
-        margin-left: 4%;
+        display: flex;
+        padding: 66px;
     }
 
     &__menu {
-        max-width: 635px;
-        flex: 0 1 635px;
-        display: flex;
-        justify-content: space-between;
+        flex: 0 0 635px;
 
-        &__menu-item {
-            
-            & a {
-                color: $black3;
-                text-decoration: none;
-                padding: 46px 0;
-                margin: 40px 0;
-                display: inline-block;
-            }
-        }
-    }
-
-    &__language-nav {
-        max-width: 100px;
-        display: flex;
-        flex: 1 1 100px;
-        justify-content: center;
-        align-self: center;
-        
-        &__menu {
+        &__list {
             display: flex;
 
-            & img {
+            &__menu-item a {
+                text-decoration: none;
+                color: $black3;
+                padding: 25px;
+                font-size: 22px;
+                color: $grey8;
+                font-weight: 500;
             }
+            &__menu-item a:hover {
+                color: $black3;
+                border-bottom: 3px solid $puddleYellow;
+            }
+        }
+    }
+}
 
-            & p {
-                color: red;
-                margin: 0;
+.language-nav {
+    display: flex;
+    font-family: $robo;
+    &__menu {
+        display: flex;
+        padding: 10px;
+
+        & p {
+            color: $grey8;
+            margin: 0 10px;
+            @include fontSize(16);
+        }
+        & .fa-angle-down {
+            color: $grey8;
+            font-size: 16px;
+        }
+    }
+}
+
+.shop {
+    display: flex;
+    margin: 0 30px;
+
+    &__list {
+        padding: 5px;
+        display: flex;  
+        justify-content: center;
+        
+        &__search,
+        &__account,
+        &__cart {
+            background: transparent;
+            border: none;
+        }
+    }
+}
+
+
+// Header Banner
+
+.banner {
+    width: 100%;
+    position: relative;
+    font-family: $mont;
+    &__text {
+        height: 900px;
+        background-image: url(../images/main-image-1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        padding-left: 10%;
+        position: relative;
+
+        & p {
+            color: #aaa;
+            @include fontSize(28);
+            font-family: $robo;
+        }
+
+        & h2 {
+            @include fontSize(80);
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: $black3;
+        }
+        
+        & h1 {
+            @include fontSize(500);
+            color: rgba(170, 170, 170, 0.219608);
+            margin: 0;
+            position: absolute;
+            bottom: 70px;
+            left: 170px;
+            font-weight: 400;
+            z-index: -1;
+        }
+
+        & span {
+            border-bottom: black 2px solid;
+            padding-bottom: 26px;
+        }
+
+        & a {
+            background: $puddleYellow;
+            color: white;
+            text-decoration: none;
+            @include fontSize(18);
+            padding: 21px 41px;
+            border-radius: 40px;
+            display: inline-block;
+            margin-top: 80px;
+            z-index: 3;
+            &:hover {
+                background: red;
             }
         }
     }
 
-    &__right-nav {
-        max-width: 150px;
+    &__button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 174px;
         display: flex;
-        text-align: right;
-        align-items: center;
-        flex: 1 1 150px;
-
+        
         & button {
-
+            width: 50%;
+            padding: 29.5px;
             background: white;
             border: none;
-
+            font-size: 20px;
+            }
         }
-    
-        &__search {
-            margin: 0 9px;
+    }
 
+.clothing-nav {
+    margin: 159px 98px;
+    display: flex;
+
+    &__menu {
+        display: block;
+        background-image: url(../images/image-1.png);
         }
 
-        &__account {
-            margin: 0 9px;
-        }
-
-        &__cart {
-            margin: 0 9px;
+        & h5 {
+            @include fontSize(28);
+            background: white;
+            margin: 0;
         }
     }
 
 
-}
