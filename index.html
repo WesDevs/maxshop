@@ -8,7 +8,7 @@
     <title>MaxShop</title>
 
     <!-- Page Icon -->
-    <link type="image/png" href="images/logo.png" rel="icon">
+    <link type="image/png" href="images/webLogo.png" rel="icon">
 
     <!-- Font - Monserrat & Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:400,500,700" rel="stylesheet">
@@ -215,24 +215,18 @@
 
         <div class="clothing-nav__menu clothing-nav__menu--left">
             <div>
-                <h5>Fashion</h5>
-                <h5>& Acessories</h5>
+                <h5><span>Fashion</span><br> <span>& Acessories</span></h5>
             </div>
-        
         </div>
 
         <div class="clothing-nav__menu clothing-nav__menu--center">
             <div>
-                <h5>New</h5>
-                <h5>Collections</h5>
+                <h5><span>New </span><br> <span> Collections</span></h5>
             </div>
         </div>
 
         <div class="clothing-nav__menu clothing-nav__menu--right">
-            <div>
-                <h5>Spring/Summer</h5>
-                <h5>Lookbook</h5>
-            </div>
+                <h5><span>Spring/Summer </span><br> <span>Lookbook</span></h5>
         </div>
 
     </section>
@@ -244,8 +238,8 @@
                     <div class="products__content__sub">
                         <p>Come & Check our new spring summer collection 2016</p>
                         <div class="products__content__sub__nav">
-                            <a>Prev </a>
-                            <a> / Next</a>
+                            <a href="#">Prev </a>
+                            <a href="#"> / Next</a>
                         </div>
                     </div>
                 </div>
@@ -276,6 +270,7 @@
                     <p>Sweatshirt in Grey Marl</p>
                     <p>T-shirt</p>
                     <h6 class="products__menu__menu-item__price">$110.00</h6>
+
                 </div>
                 <div class="products__menu__menu-item">
 
@@ -308,43 +303,39 @@
 
             <div class="lookbook__container">
 
-                <img src="images/main-image-2.png" alt="">
-
-                <div class="lookbook__slider">
-                    <button>
+                <div class="lookbook__container__slider">
+                    <button class="lookbook__container__slider--left">
                         <i class="fas fa-angle-left"></i>
                     </button>
-                    <button>
+                    <button class="lookbook__container__slider--right">
                         <i class="fas fa-angle-right"></i>
                     </button>
                 </div>
 
-            </div>
+                <div class="lookbook__content">
+                    <h4>Salvatore Ferragamo Lookbook</h4>
+                    <h4>Spring/Summer 2016</h4>
+                    <p>18 June 2016 / Salvatore Campain</p>
+                    <a href="#">Get the Look!</a>
+                </div>
 
-            <div class="lookbook__content">
-                <h4>Salvatore Ferragamo Lookbook</h4>
-                <h4>Spring/Summer 2016</h4>
-                <p>18 June 2016 / Salvatore Campain</p>
-                <a href="#">Get the Look!</a>
-                <p>By Mark Jacobs</p>
             </div>
 
         </section>
 
-        <section class="products products--secondary">
-
-            <div class="products__title">
-                <h4>Top Products</h4>
-                <p>Come & Check our new spring summer collection 2016</p>
-            </div>
-
-            <div class="products__btn">
-                <button>prev</button>
-                <button>/ Next</button>
+        <section class="products  products--secondary">
+            <div class="products__content">
+                <h4>Onsale Products</h4>
+                <div class="products__content__sub">
+                    <p>Come & Check our new spring summer collection 2016</p>
+                    <div class="products__content__sub__nav">
+                        <a href="#">Prev </a>
+                        <a href="#"> / Next</a>
+                    </div>
+                </div>
             </div>
 
             <div class="products__menu">
-
                 <div class="products__menu__menu-item">
 
                     <img src="images/onsale-products-1.png" alt="">
@@ -355,11 +346,9 @@
 
                     <p>Lipsy Crochet Applique Wrap</p>
                     <p>Blouse</p>
-                    <h6>$120.00</h6>
-                    <h6>$150.00</h6>
-
+                    <h6 class="products__menu__menu-item__price">$120.00</h6>
+                    <h6 class="products__menu__menu-item__price--discounted">$150.00</h6>
                 </div>
-
                 <div class="products__menu__menu-item">
 
                     <img src="images/onsale-products-2.png" alt="">
@@ -370,11 +359,9 @@
 
                     <p>Sweatshirt in Grey Marl</p>
                     <p>T-shirt</p>
-                    <h6>$88.00</h6>
-                    <h6>$120.00</h6>
-
+                    <h6 class="products__menu__menu-item__price">$88.00</h6>
+                    <h6 class="products__menu__menu-item__price--discounted">$120.00</h6>
                 </div>
-
                 <div class="products__menu__menu-item">
 
                     <img src="images/onsale-products-3.png" alt="">
@@ -385,11 +372,9 @@
 
                     <p>Oysho Crop & Vest Set</p>
                     <p>Dress</p>
-                    <h6>$112.00</h6>
-                    <h6>$140.00</h6>
-
+                    <h6 class="products__menu__menu-item__price">$112.00</h6>
+                    <h6 class="products__menu__menu-item__price--discounted">$140.00</h6>
                 </div>
-
                 <div class="products__menu__menu-item">
 
                     <img src="images/onsale-products-4.png" alt="">
@@ -398,13 +383,14 @@
                         <img src="images/shopping-bag.png" alt="">
                     </button>
 
-                    <p>55SDL Lightning Bolt Sweatshirt</p>
-                    <p>Dress</p>
-                    <h6>$80.00</h6>
-                    <h6>$100.00</h6>
-
+                    <p>55DSL Lightning Bolt Sweatshirt</p>
+                    <p>Sweatshirts</p>
+                    <h6 class="products__menu__menu-item__price">$80.00</h6>
+                    <h6 class="products__menu__menu-item__price--discounted">$100.00</h6>
+                    
                 </div>
             </div>
+        </section>
 
 
 
@@ -451,7 +437,6 @@
                 <h6>Chester & Peck 2016</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, bus purus eget molestie orci. In
                     hac habitasse platea di Curabitur euismod mattis neque.</p>
-
             </div>
 
         </div>
@@ -462,28 +447,33 @@
 
         <section class="module">
 
-            <div class="module__items">
+            <div class="module__items module__items--left">
                 <h4>Rethink Your Design</h4>
                 <p>Minimal & Modern Look</p>
-                <a class="module__item__button" href="#">Discover More</a>
+                <div class="module__items__btn module__items__btn--left">
+                    <a href="#">Discover More</a>
+                </div>
             </div>
 
-            <div class="module__items">
+            <div class="module__items module__items--right">
                 <h4>We Are Fashion Shop</h4>
                 <p>Revolutionary Concepts</p>
-                <a class="module__item__button" href="#">Shop Now</a>
+
+                <div class="module__items__btn module__items__btn--right">
+                    <a href="#">Shop Now</a>
+                </div>
             </div>
 
         </section>
 
         <section class="footer">
 
-            <div class="footer__units">
+            <div class="footer__units footer__units__contact">
 
                 <h6>Contact</h6>
                 <p>621 Bingamon Branch Road Warwick NY 10990</p>
 
-                <div>
+                <div class="footer__units__contact__text">
                     <p>Phone: 845-988-7165</p>
                     <p>Fax: 814-468-0188</p>
                     <p>Email: Support@maxshop.com</p>
@@ -554,9 +544,18 @@
                     <input type="submit" value="Signup" class="footer__units__signup__submit">
 
                 </form>
-
             </div>
 
+        </section>
+
+        <section class="terms">
+            <p class="terms__copyright">&#xA9; Maxshop 2016. All Right reserved</p>
+
+            <div class="terms__tpc">
+                <p>Terms Of Use</p>
+                <p>Privacy policy</p>
+                <p>Contact us</p>
+            </div>
         </section>
     </footer>
 
