@@ -21,10 +21,13 @@
             background-image: url(../images/image-1.png);
             width: 28%;
         }
+
         &--center {
             background-image: url(../images/image-2.png);
             width: 28%;
+            position: relative;
         }
+
         &--right {
             background-image: url(../images/image-3.png);
             width: 28%;
@@ -252,7 +255,93 @@
 }
 
 .blog {
-    max-width: 1170px;
-    margin: 0 auto;
+    width: 60.9%;
+    margin: 0 auto 162px auto;
+
+    &__content {
+        display: flex;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            justify-content: center;
+
+            & h6,
+            & h5,
+            & p {
+                margin: 0;
+                z-index: 9;
+                position: relative;
+            }
+
+            & h6 {
+                color: #aaa;
+                @include fontSize(12);
+                font-weight: 400;
+                font-family: $mont;
+                margin-bottom: 20px;
+            }
+
+            & h6:first-of-type {
+                text-transform: uppercase;
+            }
+
+            & h6:last-of-type {
+            }
+
+            & h5 {
+                @include fontSize(20);
+                font-weight: 500;
+                font-family: $mont;
+                margin-bottom: 10px;
+            }
+
+            & p {
+                @include fontSize(15.38);
+                color: #666;
+                line-height: 24px;
+                padding-bottom: 40px;
+            }
+
+            &--secondary {
+                margin-right: 100px;
+                width: 100%;
+            }
+
+            &--primary {
+                margin-left: 100px;
+            }
+        }
+
+        &__image {
+            z-index: 4;
+            
+        }
+
+        &--primary {
+            z-index: 5;
+            position: relative;
+        }
+
+        &--secondary {
+            margin-top: -100px;
+            z-index: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            background: url(../images/blog-2.png) no-repeat;
+            height: 390px;
+        }
+
+        &__container {
+            position: relative;
+            z-index: 10;
+
+        }
+    }
+
+    
 }
 

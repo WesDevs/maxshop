@@ -399,28 +399,29 @@
 
     <section class="blog">
 
-        <h4 class="blog__header4">Our Blog</h4>
+        <h4 class="blog__header">Our Blog</h4>
 
-        <div class="blog__content">
+        <div class="blog__content blog__content--primary">
 
-            <div class="blog__content__text">
-                <p>Lookbook</p>
-                <h6>Excerpt: A Sense of Belonging</h6>
+            <div class=" blog__content__text blog__content__text--primary clearfix">
+                <h6>Lookbook</h6>
+                <h5>Excerpt: A Sense of Belonging</h5>
+                <h6>4 October 2016/368 Comments</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, bus purus eget molestie orci. In
                     hac habitasse platea di Curabitur euismod mattis neque.</p>
             </div>
 
-            <img src="images/blog-1.png" alt="" class="blog__content__image">
+            <div class="blog__content__image">
+                <img src="images/blog-1.png" alt="" class="blog__content__image">
+            </div>
 
         </div>
 
-        <div class="blog__content">
+        <div class="blog__content blog__content--secondary ">
 
-            <div class="blog__content__image">
+            <div class="blog__content__container">
 
-                <img src="images/blog-2.png" alt="">
-
-                <div class="blog__content__image__button">
+                <div class="blog__content__container__button">
                     <button>
                         <i class="fas fa-angle-left"></i>
                     </button>
@@ -428,15 +429,17 @@
                         <i class="fas fa-angle-right"></i>
                     </button>
                 </div>
-
+                
             </div>
 
-            <div class="blog__content__text">
+            <div class="blog__content__text blog__content__text--secondary clearfix">
 
-                <p>Campaign</p>
-                <h6>Chester & Peck 2016</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, bus purus eget molestie orci. In
-                    hac habitasse platea di Curabitur euismod mattis neque.</p>
+                <h6>Campaign</h6>
+                <h5>Chester & Peck 2016</h5>
+                <h6>4 October 2016/368 Comments</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+    <br>auctor, bus purus eget molestie orci. In hac habitasse platea
+    <br> di Curabitur euismod mattis neque.</p>
             </div>
 
         </div>
@@ -548,7 +551,22 @@
 
         </section>
 
+        <section class="social-nav">
+            <p class="social-nav__header">Follow us On</p>
+            
+            <ul class="social-nav__menu">
+                <li class="social-nav__menu__menu-item"><a href="#">Behance</a></li>
+                <li class="social-nav__menu__menu-item"><a href="#">Dribble</a></li>
+                <li class="social-nav__menu__menu-item"><a href="#">Themeforest</a></li>
+                <li class="social-nav__menu__menu-item"><a href="#">Pinterest</a></li>
+                <li class="social-nav__menu__menu-item"><a href="#">Facebook</a></li>
+                <li class="social-nav__menu__menu-item"><a href="#">Twitter</a></li>
+            </ul>
+
+        </section>
+
         <section class="terms">
+
             <p class="terms__copyright">&#xA9; Maxshop 2016. All Right reserved</p>
 
             <div class="terms__tpc">
@@ -556,6 +574,7 @@
                 <p>Privacy policy</p>
                 <p>Contact us</p>
             </div>
+
         </section>
     </footer>
 
