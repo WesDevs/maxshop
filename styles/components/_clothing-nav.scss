@@ -13,6 +13,17 @@
         background: center;
         background-repeat: no-repeat;
 
+        &::before {
+            content:"- Unique Novelties";
+            position: absolute;
+            left: -100px;
+            top: 30%;
+            color: black;
+            font-family: $robo;
+            @include fontSize(20);
+            transform: rotate(-90deg);
+        }
+
         & span {
             background: white;
             z-index: 4;
@@ -21,9 +32,29 @@
             color: black;
         }
 
+        // & p {
+        //     position: absolute;
+        //     color: black;
+        //     left: 0;
+        //     top: 50%;
+        //     transform: translate(90deg);
+        //     @include fontSize(16);
+        // }
+
         &--left {
             background-image: url(../images/image-1.png);
             width: 28%;
+
+            &::before {
+                content: "- Diverse Products";
+                position: absolute;
+                left: -100px;
+                top: 30%;
+                color: black;
+                font-family: $robo;
+                @include fontSize(20);
+                transform: rotate(-90deg);
+            }
         }
 
         &--center {

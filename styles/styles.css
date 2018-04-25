@@ -409,6 +409,18 @@ h4 {
     justify-content: flex-end;
     background: center;
     background-repeat: no-repeat; }
+    .clothing-nav__menu::before {
+      content: "- Unique Novelties";
+      position: absolute;
+      left: -100px;
+      top: 30%;
+      color: black;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-size: 2rem;
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
     .clothing-nav__menu span {
       background: white;
       z-index: 4;
@@ -418,6 +430,18 @@ h4 {
     .clothing-nav__menu--left {
       background-image: url(../images/image-1.png);
       width: 28%; }
+      .clothing-nav__menu--left::before {
+        content: "- Diverse Products";
+        position: absolute;
+        left: -100px;
+        top: 30%;
+        color: black;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-size: 2rem;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
     .clothing-nav__menu--center {
       background-image: url(../images/image-2.png);
       width: 28%;
@@ -676,6 +700,18 @@ h4 {
   margin: 0 auto 159px auto;
   background: url(../images/main-image-2.png) no-repeat left top;
   position: relative; }
+  .lookbook::after {
+    content: "By Mark Jacobs";
+    font-family: "Roboto", sans-serif;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-size: 16px;
+    font-size: 1.6rem;
+    bottom: 10%;
+    right: 20%;
+    position: absolute;
+    text-transform: uppercase; }
   .lookbook__container {
     width: 100%;
     display: -webkit-box;
@@ -684,7 +720,8 @@ h4 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-top: 100px; }
+    margin-top: 100px;
+    position: relative; }
     .lookbook__container__slider {
       padding: 240px 0;
       display: inline-block;
@@ -756,7 +793,18 @@ h4 {
       color: white;
       text-shadow: 0 4px 4px silver; } }
 
+@media (max-width: 1790px) {
+  .lookbook::after {
+    color: white;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    text-shadow: 0 3px 3px black; } }
+
 @media (max-width: 921px) {
+  .lookbook ::after {
+    font-size: 15px;
+    font-size: 1.5rem; }
   .lookbook__container__slider {
     display: none; }
   .lookbook__content {
@@ -996,7 +1044,7 @@ h4 {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      height: 300px; }
+      height: 500px; }
       .module__items--left a {
         color: white; }
     .module__items--right {
@@ -1013,7 +1061,8 @@ h4 {
       justify-content: center;
       -webkit-box-align: end;
       -ms-flex-align: end;
-      align-items: flex-end; }
+      align-items: flex-end;
+      height: 500px; }
       .module__items--right p,
       .module__items--right h4,
       .module__items--right div {
@@ -1179,7 +1228,6 @@ footer {
     justify-content: center; }
     .module__items {
       width: 80%;
-      height: 300px;
       background-position: center;
       margin: 0 auto;
       -ms-flex-line-pack: justify;
@@ -1213,7 +1261,8 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    height: 300px; }
     .module__items--left, .module__items--right {
       -webkit-box-pack: center;
       -ms-flex-pack: center;

@@ -3,12 +3,26 @@
     margin: 0 auto 159px auto;
     background: url(../images/main-image-2.png) no-repeat left top;
     position: relative;
+    
+    &::after {
+        content: "By Mark Jacobs";
+        font-family: $robo;
+        transform: rotate(-90deg);
+        @include fontSize(16);
+        bottom: 10%;
+        right: 20%;
+        position: absolute;
+        text-transform: uppercase;
+    }
 
     &__container {
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin-top: 100px;
+        position: relative;
+
+        
 
         &__slider {
             padding: 240px 0;
@@ -115,9 +129,23 @@
     }
 }
 
+@media (max-width: 1790px) {
+
+    .lookbook::after {
+        color: white;
+        transform: rotate(0);
+        text-shadow: 0 3px 3px black;
+
+    }
+}
+
 @media (max-width: 921px) {
 
     .lookbook {
+
+        ::after {
+            @include fontSize(15);
+        }
 
         &__container__slider {
             display: none;
