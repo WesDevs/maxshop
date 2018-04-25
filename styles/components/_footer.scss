@@ -2,6 +2,7 @@
     width: 100%;
 }
 
+// Module Section - Rethink Design/Fashion Shop
 .module {
     width: 100%;
     display: flex;
@@ -95,6 +96,8 @@
         }
     }
 }
+
+// Footer Section
 
 footer {
     width: 100%;
@@ -215,6 +218,8 @@ footer {
         }
     }
 }
+
+//  Copyright and terms footer 
 
 .terms {
     width: 100%;
@@ -338,15 +343,47 @@ footer {
     }
 }
 
+
 // Footer Responsive
 @media (max-width: 894px) {
 
     .footer {
 
         flex-direction: column;
+        width: 90%;
 
         &__units {
             width: 100%;
+
+            &__links,
+            &__image-wrapper {
+                justify-content: center;                  
+            }
+
+            &__image-wrapper {
+                width: 100%;
+            }
+
+            &__signup  {
+                flex-direction: column;
+                &__email,
+                &__submit {
+                    margin: 10px 0 0 0;
+                    width: 100%;
+                }
+
+            }
         }
+    }
+}
+
+
+// Copyright/Term footer Responsive
+@media (max-width: 644px) {
+    .terms {
+
+        @include fontSize(10);
+        padding: 10px 0
+        ;
     }
 }

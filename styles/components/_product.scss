@@ -16,6 +16,7 @@
             margin: 20px 0;
         }
 
+
         &__sub {
             display: flex;
             justify-content: space-between;
@@ -83,6 +84,14 @@
             margin: 60px 0;
             position: relative;
 
+            &:hover {
+                box-shadow: 0 5px 4px silver;
+            }
+
+            &:hover button {
+                background: $puddleYellow;
+            }
+
             & button {
                 background: $black3;
                 border: none;
@@ -90,10 +99,6 @@
                 position: absolute;
                 right: 0;
                 bottom: 93px;
-
-                &:hover {
-                    background: $puddleYellow;
-                }
             }
 
             & p {
@@ -101,6 +106,7 @@
                 margin: 0;
                 font-family: $robo;
                 line-height: 24px;
+                color: black;
 
                 &:last-of-type {
                     color: #aaa;

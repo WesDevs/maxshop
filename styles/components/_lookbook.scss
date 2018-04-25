@@ -77,7 +77,8 @@
             background: white;
             padding: 20px 33px;
 
-            &:hover {
+            &:hover,
+            &:active {
                 background: beige;
                 color: rgb(233, 138, 174);
                 border: rgb(243, 160, 130) 2px solid;

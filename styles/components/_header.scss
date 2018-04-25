@@ -178,6 +178,10 @@
 @media (max-width: 629px) {
 
     .top-nav {
+
+        &__logo {
+            padding: 30px 0;
+        }
     
         &__burger {
             display: flex;
@@ -222,7 +226,7 @@
 
         & p {
             color: white;
-            background: rgba(128, 128, 128, 0.342);
+            text-shadow: 0 4px 4px black;
             display: inline;
         }
 
