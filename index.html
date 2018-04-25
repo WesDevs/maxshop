@@ -33,6 +33,11 @@
 
             <div class="top-nav__menu">
 
+                <div class="top-nav__burger" id="burger">
+                    <p>Menu</p>
+                    <i class="fas fa-bars"></i>
+                </div>
+
                 <ul class="top-nav__menu__list">
 
                     <li class="top-nav__menu__list__menu-item">
@@ -41,97 +46,6 @@
 
                     <li class="top-nav__menu__list__menu-item">
                         <a href="#">Shop</a>
-                        <!-- <div class="visuallyhidden">
-                            <nav>
-                                <h3>Clothing</h3>
-                                <ul>
-                                    <li> 
-                                        <a href="#">Shirts</a> 
-                                    </li>
-                                    <li> 
-                                        <a href="#">Tops</a> 
-                                    </li>
-                                    <li> 
-                                        <a href="#">Outerwear</a> 
-                                    </li>
-                                    <li> 
-                                        <a href="#">Bottoms</a> 
-                                    </li>
-                                    <li> 
-                                        <a href="#">Denim</a> 
-                                    </li>
-                                    <li> 
-                                        <a href="#">Swim</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <nav>
-                                <h3>Hand Bag</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">Work</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Weekend</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Backpacks</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Wallets</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Work</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <nav>
-                                <h3>Shoes</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">Sneakers</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Casual</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Boots</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Shoe Care</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <nav>
-                                <h3>Accesories</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">Sunglasses</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Watches</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Jewelry</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Hats, Scarves & Gloves</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Ties</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Underwear & Socks</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Grooming Products</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Belts</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div> -->
                     </li>
 
                     <li class="top-nav__menu__list__menu-item">
@@ -223,6 +137,8 @@
             <div>
                 <h5><span>New </span><br> <span> Collections</span></h5>
             </div>
+
+            <div class="whitebox"></div>
         </div>
 
         <div class="clothing-nav__menu clothing-nav__menu--right">
@@ -313,7 +229,7 @@
                 </div>
 
                 <div class="lookbook__content">
-                    <h4>Salvatore Ferragamo Lookbook</h4>
+                    <h4><span>Salvatore</span> Ferragamo Lookbook</h4>
                     <h4>Spring/Summer 2016</h4>
                     <p>18 June 2016 / Salvatore Campain</p>
                     <a href="#">Get the Look!</a>
@@ -399,28 +315,29 @@
 
     <section class="blog">
 
-        <h4 class="blog__header4">Our Blog</h4>
+        <h4 class="blog__header">Our Blog</h4>
 
-        <div class="blog__content">
+        <div class="blog__content blog__content--primary">
 
-            <div class="blog__content__text">
-                <p>Lookbook</p>
-                <h6>Excerpt: A Sense of Belonging</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, bus purus eget molestie orci. In
-                    hac habitasse platea di Curabitur euismod mattis neque.</p>
+            <div class=" blog__content__text blog__content__text--primary clearfix">
+                <h6>Lookbook</h6>
+                <h5>Excerpt: A Sense of Belonging</h5>
+                <h6>4 October 2016/368 Comments</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, bus purus eget molestie orci. In hac
+                    habitasse platea di Curabitur euismod mattis neque.</p>
             </div>
 
-            <img src="images/blog-1.png" alt="" class="blog__content__image">
+            <div class="blog__content__image">
+                <img src="images/blog-1.png" alt="" class="blog__content__image">
+            </div>
 
         </div>
 
-        <div class="blog__content">
+        <div class="blog__content blog__content--secondary ">
 
-            <div class="blog__content__image">
+            <div class="blog__content__container">
 
-                <img src="images/blog-2.png" alt="">
-
-                <div class="blog__content__image__button">
+                <div class="blog__content__container__button">
                     <button>
                         <i class="fas fa-angle-left"></i>
                     </button>
@@ -431,12 +348,14 @@
 
             </div>
 
-            <div class="blog__content__text">
+            <div class="blog__content__text blog__content__text--secondary clearfix">
 
-                <p>Campaign</p>
-                <h6>Chester & Peck 2016</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor, bus purus eget molestie orci. In
-                    hac habitasse platea di Curabitur euismod mattis neque.</p>
+                <h6>Campaign</h6>
+                <h5>Chester & Peck 2016</h5>
+                <h6>4 October 2016/368 Comments</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                    <br>auctor, bus purus eget molestie orci. In hac habitasse platea
+                    <br> di Curabitur euismod mattis neque.</p>
             </div>
 
         </div>
@@ -552,9 +471,9 @@
             <p class="terms__copyright">&#xA9; Maxshop 2016. All Right reserved</p>
 
             <div class="terms__tpc">
-                <p>Terms Of Use</p>
-                <p>Privacy policy</p>
-                <p>Contact us</p>
+                <a href="#">Terms Of Use</a> 
+                <a href="#">Privacy policy</a> 
+                <a href="#">Contact us</a>
             </div>
         </section>
     </footer>
@@ -562,6 +481,13 @@
 
     <!-- Font Awesome Icons -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="functions/functions.js"></script>
+
 </body>
 
 </html>

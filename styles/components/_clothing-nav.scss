@@ -1,0 +1,83 @@
+.clothing-nav {
+    margin: 159px 98px;
+    display: flex;
+    justify-content: space-between;
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        height: 558px;
+        position: relative;
+        right: 0;
+        justify-content: flex-end;
+        background: center;
+        background-repeat: no-repeat;
+
+        & span {
+            background: white;
+            z-index: 4;
+            position: relative;
+            left: -15px;
+        }
+
+        &--left {
+            background-image: url(../images/image-1.png);
+            width: 28%;
+        }
+
+        &--center {
+            background-image: url(../images/image-2.png);
+            width: 28%;
+            position: relative;
+
+            & .whitebox {
+                position: absolute;
+                border: 4px white solid;
+                top: 5%;
+                right: 10%;
+                left: 10%;
+                bottom: 5%;
+                z-index: 1;
+            }
+        }
+
+        &--right {
+            background-image: url(../images/image-3.png);
+            width: 28%;
+        }
+
+        & div {
+            display: block;
+            flex-direction: column;
+            margin: 5px 0;
+        }
+
+        & h5 {
+            display: inline-block;
+            @include fontSize(28);
+            font-weight: 700;
+            margin: 0;
+            line-height: 4rem;
+            margin-bottom: 80px; // background: white;
+        }
+    }
+}
+
+
+// Lookbook Responsive
+
+@media (max-width: 1060px) {
+    .clothing-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+
+        &__menu {
+            width: 300px;
+            text-align: center;
+            margin-top: 40px;
+            height: 350px;
+        }
+    }
+}

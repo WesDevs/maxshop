@@ -64,8 +64,8 @@
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
-            align-content: center;
-            padding: 138px 0;
+            align-items: center;
+            height: 300px;
 
             & a {
                 color: white;
@@ -73,11 +73,11 @@
         }
 
         &--right {
-            background: url(../images/footer-2.png);
+            background: url(../images/footer-2.png) no-repeat;
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
-            align-content: right;
+            align-items: flex-end;
 
             & p,
             & h4,
@@ -105,11 +105,12 @@ footer {
     width: 60.9%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     padding: 80px 0;
     justify-content: space-between;
 
     &__units {
-        width: 23%;
+        width: 270px;
 
         & h6 {
             margin: 0;
@@ -193,6 +194,11 @@ footer {
                 background: transparent;
                 color: white;
                 border: 1px white solid;
+                &:focus,
+                &:hover {
+                    background: white;
+                    color: black;
+                }
             }
 
             &__submit {
@@ -200,9 +206,13 @@ footer {
                 background: transparent;
                 border: 1px $puddleYellow solid;
                 color: $puddleYellow;
+                
+                &:active,
+                &:hover {
+                    background: white;
+                }
             }
         }
-  
     }
 }
 
@@ -211,13 +221,132 @@ footer {
     background: rgb(75, 75, 75);
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-content: baseline;
+    align-content: center;
     @include fontSize(16);
     font-family: $robo;
+    padding: 2% 0;
 
     &__tpc {
         display: flex;
-        
+        justify-content: space-between;
+        align-items: center;
+
+        & a {
+            padding: 0 20px;
+            border-right: rgba(255, 255, 255, 0.712) 1px solid;
+            display: flex;
+            height: 20px;
+            text-decoration: none;
+            color: White;
+
+            &:hover {
+                color: $puddleYellow;
+                text-shadow: 0 3px 3px black;
+            }
+
+            &:last-of-type {
+                border-right: none;
+            }
+        }
+    }
+}
+
+// Module Responsive
+
+@media (max-width: 1160px) {
+
+    .module {
+        flex-direction: column;
+        justify-content: center;
+
+        &__items {
+            width: 80%;
+            height: 300px;
+            background-position: center;
+            margin: 0 auto;
+            align-content: space-between;
+
+
+            &--left,
+            &--right {
+                flex-direction: row;
+                flex-wrap: none;
+                align-items: center;
+                justify-content: space-between;
+                align-content: center;
+
+                & a,
+                & p,
+                & h4,
+                & div {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 905px) {
+    
+    .module {
+
+        &__items {
+            flex-direction: column;
+
+            &--left,
+            &--right {
+                justify-content: center;
+
+                & a,
+                & p,
+                & h4,
+                & div {
+                    margin: 2% 0;
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 578px) {
+
+    .module {
+
+        &__items {
+
+            &--left,
+            &--right {
+
+                & a {
+                    @include fontSize(10);
+                }
+                & p {
+                    @include fontSize(15);
+                }
+                & h4 {
+                    @include fontSize(20);
+                }
+                & div {
+                    
+
+                }
+            }
+        }
+    }
+}
+
+// Footer Responsive
+@media (max-width: 894px) {
+
+    .footer {
+
+        flex-direction: column;
+
+        &__units {
+            width: 100%;
+        }
     }
 }

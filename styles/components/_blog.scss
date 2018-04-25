@@ -1,0 +1,184 @@
+.blog {
+    width: 60.9%;
+    margin: 0 auto 162px auto;
+    
+    &__content {
+        display: flex;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            justify-content: center;
+
+            & h6,
+            & h5,
+            & p {
+                margin: 0;
+                z-index: 9;
+                position: relative;
+            }
+
+            & h6 {
+                color: #aaa;
+                @include fontSize(12);
+                font-weight: 400;
+                font-family: $mont;
+                margin-bottom: 20px;
+            }
+
+            & h6:first-of-type {
+                text-transform: uppercase;
+            }
+
+            & h5 {
+                @include fontSize(20);
+                font-weight: 500;
+                font-family: $mont;
+                margin-bottom: 10px;
+            }
+
+            & p {
+                @include fontSize(15.38);
+                color: #666;
+                line-height: 24px;
+                padding-bottom: 40px;
+            }
+            &--secondary {
+                margin-right: 100px;
+                width: 100%;
+            }
+
+            &--primary {
+                margin-left: 100px;
+            }
+        }
+
+        &__image {
+            z-index: 4;
+        }
+
+        &--primary {
+            z-index: 5;
+            position: relative;
+        }
+
+        &--secondary {
+            margin-top: -100px;
+            z-index: 1;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            text-align: right;
+            background: url(../images/blog-2.png) no-repeat;
+            height: 390px;
+        }
+
+        &__container {
+            position: relative;
+            z-index: 10;
+
+            &__button {
+                position: absolute;
+                left: 550px;
+                bottom: 10px;
+                display: flex;
+
+                & button {
+                    background: white;
+                    border: none;
+                    @include fontSize(20);
+                    padding: 10px 20px;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1624px) {
+    .blog {
+
+        &__content {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &__image {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            &__text--primary {
+                width: 70%;
+                margin: 0;
+            }
+
+            &__text--secondary {
+                margin-right: 0;
+            }
+        
+            &--secondary {
+                margin: 0;
+                align-items: center;
+                text-align: center;
+                background-position: center;
+                
+                & p {
+                    color: white;
+                    background: rgba(128, 128, 128, 0.342);
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 5%;
+                }
+
+                & h6 {
+                    color: $puddleYellow;
+                    font-weight: bold;
+                    text-shadow: 0 3px 3px black;
+                }
+
+                & h5 {
+                    font-weight: bold;
+                    background: white;
+                }
+            }
+
+            &__container__button {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 718px) {
+    .blog {
+
+        width: 100%;
+
+        &__header {
+            @include fontSize(25);
+            text-align: center;
+        }
+
+        &__content {
+
+            &__text {
+
+                text-align: center;
+
+                & p {
+                    @include fontSize(10);
+                    font-weight: bold;
+                }
+
+                & h5 {
+                    @include fontSize(17);
+                }
+
+                &--primary {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

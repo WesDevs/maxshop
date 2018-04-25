@@ -1,4 +1,3 @@
-
 // Header Nav
 
 .top-nav {
@@ -14,8 +13,13 @@
         padding: 66px;
     }
 
+    &__burger {
+        display: none;
+    }
+
     &__menu {
-        flex: 0 0 635px;
+        max-width: 635px;
+        margin-bottom: 40px;
 
         &__list {
             display: flex;
@@ -39,6 +43,7 @@
 .language-nav {
     display: flex;
     font-family: $robo;
+    
     &__menu {
         display: flex;
         padding: 10px;
@@ -84,7 +89,7 @@
         height: 900px;
         background-image: url(../images/main-image-1.png);
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: right top;
         background-size: contain;
         padding-left: 10%;
         position: relative;
@@ -93,6 +98,10 @@
             color: #aaa;
             @include fontSize(28);
             font-family: $robo;
+        }
+
+        & h4 {
+            font-family: $mont;
         }
 
         & h2 {
@@ -110,7 +119,7 @@
             position: absolute;
             bottom: 70px;
             left: 170px;
-            font-weight: 400;
+            font-weight: 500;
             z-index: -1;
         }
 
@@ -129,6 +138,7 @@
             display: inline-block;
             margin-top: 80px;
             z-index: 3;
+
             &:hover {
                 background: red;
             }
@@ -139,7 +149,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 174px;
+        width: 15%;
         display: flex;
         
         & button {
@@ -148,7 +158,142 @@
             background: white;
             border: none;
             font-size: 20px;
+
+            &:hover {
+                background: $puddleYellow;
             }
         }
     }
+}
 
+
+// Top Nav Responsive
+@media (max-width: 1341px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 629px) {
+
+    .top-nav {
+    
+        &__burger {
+            display: flex;
+            margin: 0 auto;
+            font-size: 25px;
+            text-align: center;
+            justify-content: space-between;
+
+            & p {
+                margin: 0;
+                line-height: 23px;
+            }
+        }
+
+        &__menu__list {
+            flex-direction: column;
+            text-align: center;
+            display: none;
+
+            &__menu-item {
+                padding: 10px 0;
+                
+                & a {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Banner Responsive
+@media (max-width: 1835px) {
+
+    .banner__text {
+        
+        & h1,
+        & p {
+            color: rgba(248, 185, 195, 0.897);
+            z-index: 3;
+        }
+
+        & p {
+            color: white;
+            background: rgba(128, 128, 128, 0.342);
+            display: inline;
+        }
+
+        & a {
+            z-index: 5;
+            position: relative;
+        }
+
+        & h4 {
+            @include fontSize(20);
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+
+    .banner__text {
+
+        padding-top: 0;
+        max-height: 400px;
+
+        & h1 {
+            display: none;
+        }
+
+        & h2 {
+            @include fontSize(60);
+        }
+
+        & p {
+            @include fontSize(25);
+        }
+    }
+
+    .banner__button {
+        bottom: 60%;
+        
+        & button {
+            padding: 12px 0;
+        }
+    }
+}
+
+@media (max-width: 872px) {
+    .banner__text {
+        
+        // height: 250px;
+
+        & h2 {
+            @include fontSize(25);
+            line-height: 5px;
+            margin-top: 10%;
+        }
+        & p {
+            @include fontSize(15);
+        }
+
+        & h4 {
+            @include fontSize(15);
+        }
+
+        & a {
+            @include fontSize(10);
+            padding: 10px 15px;
+            font-weight: bold;
+            margin-top: 10%;
+        }
+    }   
+
+    .banner__button {
+
+        display: none;
+    }    
+}

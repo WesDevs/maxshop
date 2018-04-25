@@ -2,7 +2,10 @@
 @import "utils";
 @import "typography";
 @import "components/header";
-@import "components/body";
+@import "components/clothing-nav";
+@import "components/product";
+@import "components/lookbook";
+@import "components/blog";
 @import "components/footer";
 
 // Universal Applications
@@ -20,7 +23,7 @@ li {
     list-style: none;
 }
 
-a {
+* {
     transition: all 0.2s ease;
 }
 
